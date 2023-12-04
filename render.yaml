@@ -3,7 +3,7 @@ services:
   - type: web
     name: alist
     env: docker
-    repo: https://github.com/alist-org/alist-render.git # optional
+    repo: https://github.com/Sadik084/alist-render # optional
     region: oregon # optional (defaults to oregon)
     plan: free # optional (defaults to starter)
     healthCheckPath: /
@@ -11,26 +11,18 @@ services:
       - key: PORT
         value: 5244
       - key: DB_TYPE
-        # value: sqlite3
-        sync: false
+        value: MySQL
       - key: DB_HOST
-        # value: db_host
-        sync: false
+        value: db4free.net
       - key: DB_PORT
-        # value: 3306
-        sync: false
+        value: 3306
       - key: DB_USER
-        # value: db_user
-        sync: false
+        value: servertechinfin
       - key: DB_PASS
-        # value: db_password
-        sync: false
+        value: sadik@@@
       - key: DB_NAME
-        # value: db_name
-        sync: false
+        value: techinfinities
       - key: DB_TABLE_PREFIX
-        # value: alist_
-        sync: false
+        value: alist_
       - key: CDN
-        # value: https://npm.elemecdn.com/alist-web@$version/dist
-        sync: false
+        value: https://npm.elemecdn.com/alist-web@$version/dist
